@@ -1,0 +1,37 @@
+#include<stdio.h>
+int main()
+{
+    int i,j,n=6,k=1;
+    for(i=1;i<2*n;i++)
+    {
+        i<=n?k++:k--;
+        int count=1;
+        for(j=1;j<2*k;j++)
+        {
+            if(j==1||j==2*k-1)
+            {
+                printf("* ");
+            }
+            else
+            {
+                printf("%d ",count);
+                j<k?count++:count--;
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
+
+op:
+*
+*1*
+*121*
+*12321*
+*1234321*
+*12321*
+*121*
+*1*
+*
